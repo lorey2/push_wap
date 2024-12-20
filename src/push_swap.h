@@ -6,14 +6,14 @@
 /*   By: lorey <loic.rey.vs@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 19:01:31 by lorey             #+#    #+#             */
-/*   Updated: 2024/12/19 17:10:12 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2024/12/20 18:03:58 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H
 
-//# include <stdio.h>
+# include <stdio.h>
 # include <stdlib.h>
 //# include <string.h>
 //# include <sys/types.h>
@@ -59,13 +59,14 @@ int			min_rb_rrb_2(t_data *data);
 int			max(t_data *data);
 int			min(t_data *data);
 int			min_a(t_data *data);
+int			max_a(t_data *data);
 void		final_rotation(t_data *data);
 int			is_stack_already_sorted(t_data *data);
 void		three_args(t_data *data);
 void		the_two_cases(t_data *data, int i);
+void		four_five_args(t_data *data);
 int			find_nb(t_data *data, int i);
 void		execute(t_data *data);
 void		final_test(t_data *data, char *current_move);
 char		*ft_strdup(const char *s1);
-
 #endif
