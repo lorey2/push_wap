@@ -6,7 +6,7 @@
 /*   By: lorey <loic.rey.vs@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 15:57:19 by lorey             #+#    #+#             */
-/*   Updated: 2024/12/19 21:51:29 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2024/12/27 13:33:09 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,15 +80,19 @@ int	main(int argc, char **argv)
 
 	data.argc = argc;
 	data.b = 0;
-	data.stack = malloc(data.argc * sizeof(int));
-	if (!data.stack)
-		return (0);
 	is_number_double(argv);
-	create_stack(&data, argv);
-	g_n_l_execute(&data);
-	if (is_stack_already_sorted(&data))
-		write(1, "OK\n", 3);
-	else
-		write(1, "KO\n", 3);
-	return (free(data.stack), 0);
+	if (argc != 1)
+	{
+		data.stack = malloc(data.argc * sizeof(int));
+		if (!data.stack)
+			return (0);
+		create_stack(&data, argv);
+		g_n_l_execute(&data);
+		if (is_stack_already_sorted(&data))
+			write(1, "OK\n", 3);
+		else
+			write(1, "KO\n", 3);
+		return (free(data.stack), 0);
+	}
+	return (0);
 }

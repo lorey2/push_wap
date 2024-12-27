@@ -6,7 +6,7 @@
 /*   By: lorey <loic.rey.vs@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/08 21:40:11 by lorey             #+#    #+#             */
-/*   Updated: 2024/12/14 01:35:26 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2024/12/27 16:47:12 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ static int	count_ra(t_data *data)
 
 	counter_ra = 0;
 	i = -1;
+	data->min_stack_a = min_a(data);
 	while (data->stack[0] != data->min_stack_a)
 	{
 		ra(data, 1);
@@ -36,6 +37,7 @@ static int	count_rra(t_data *data)
 
 	counter_rra = 0;
 	i = -1;
+	data->min_stack_a = min_a(data);
 	while (data->stack[0] != data->min_stack_a)
 	{
 		rra(data, 1);
