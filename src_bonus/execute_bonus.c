@@ -6,7 +6,7 @@
 /*   By: lorey <loic.rey.vs@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 16:18:03 by lorey             #+#    #+#             */
-/*   Updated: 2024/12/27 17:34:06 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2024/12/28 20:07:26 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,15 +52,13 @@ void	g_n_l_execute(t_data *data)
 {
 	char	*line;
 
-	line = get_next_line(0);
-	if (line)
-		line[ft_strlen(line) - 1] = '\0';
-	while (line != NULL)
+	while (get_next_line(&line))
 	{
-		execute_op(data, line);
-		free(line);
-		line = get_next_line(0);
 		if (line)
 			line[ft_strlen(line) - 1] = '\0';
+		execute_op(data, line);
+		free(line);
 	}
+	if (line)
+		free(line);
 }

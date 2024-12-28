@@ -6,7 +6,7 @@
 /*   By: lorey <loic.rey.vs@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 16:31:38 by lorey             #+#    #+#             */
-/*   Updated: 2024/12/27 16:57:12 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2024/12/28 21:13:40 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,9 +79,9 @@ int	main(int argc, char **argv)
 	data.argc = argc;
 	data.b = 0;
 	data.pr_mve = NULL;
+	is_number_double(argv);
 	if (argc != 1 && argc != 2)
 	{
-		is_number_double(argv);
 		data.stack = malloc(data.argc * sizeof(int));
 		if (!data.stack)
 			return (0);

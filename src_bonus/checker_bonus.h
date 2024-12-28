@@ -6,7 +6,7 @@
 /*   By: lorey <loic.rey.vs@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 16:01:37 by lorey             #+#    #+#             */
-/*   Updated: 2024/12/19 20:32:54 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2024/12/28 20:00:54 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ void		rrb(t_data *data);
 void		rrr(t_data *data);
 void		execute(t_data *data);
 void		g_n_l_execute(t_data *data);
-char		*get_next_line(int fd);
+int			get_next_line(char **line);
 int			is_stack_already_sorted(t_data *data);
 
 #endif
