@@ -6,7 +6,7 @@
 /*   By: lorey <loic.rey.vs@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 19:01:31 by lorey             #+#    #+#             */
-/*   Updated: 2024/12/20 18:03:58 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2024/12/29 15:28:56 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,4 +69,6 @@ int			find_nb(t_data *data, int i);
 void		execute(t_data *data);
 void		final_test(t_data *data, char *current_move);
 char		*ft_strdup(const char *s1);
+size_t		ft_strlen_skip_zero(const char *s);
+
 #endif

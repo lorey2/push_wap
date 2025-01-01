@@ -6,7 +6,7 @@
 /*   By: lorey <loic.rey.vs@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 19:04:19 by lorey             #+#    #+#             */
-/*   Updated: 2024/12/27 16:36:30 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2024/12/29 15:34:44 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,22 @@ size_t	ft_strlen(const char *s)
 	while (s[size])
 		size++;
 	return (size);
+}
+
+size_t	ft_strlen_skip_zero(const char *s)
+{
+	size_t	size;
+	size_t	i;
+
+	size = 0;
+	i = 0;
+	if (s[i] == '+' || s[i] == '-')
+		i++;
+	while (s[i] == '0')
+		i++;
+	while (s[size])
+		size++;
+	return (size - i);
 }
 
 int	ft_strcmp(char *s1, char *s2)

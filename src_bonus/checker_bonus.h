@@ -6,7 +6,7 @@
 /*   By: lorey <loic.rey.vs@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/18 16:01:37 by lorey             #+#    #+#             */
-/*   Updated: 2024/12/28 20:00:54 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2024/12/29 15:38:44 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,9 @@ typedef struct s_data
 }				t_data;
 
 size_t		ft_strlen(const char *s);
+size_t		ft_strlen_skip_zero(const char *s);
 int			ft_strcmp(char *s1, char *s2);
 long long	ft_atoi(const char *str);
-int			ft_strchr(const char *s, int c);
-char		*ft_strdup(const char *s1);
-char		*ft_strjoin(char const *s1, char const *s2);
-char		*ft_substr(char const *s, unsigned int start, size_t len);
 void		sa(t_data *data);
 void		sb(t_data *data);
 void		ss(t_data *data);

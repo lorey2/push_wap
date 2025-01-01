@@ -38,7 +38,7 @@ SRC_FILES        = mini_libft push_swap special_cases \
 				   final_test
 SRC_BONUS_FILES  = mini_libft_bonus checker_bonus execute_bonus \
                    sa_sb_ss_pa_pb_bonus ra_rb_rr_bonus rra_rrb_rrr_bonus \
-				   gnl_bonus utils_gnl_bonus
+				   gnl_bonus
 
 SRC              = $(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC_FILES)))
 SRC_BONUS        = $(addprefix $(SRC_DIR_BONUS), $(addsuffix .c, $(SRC_BONUS_FILES)))
