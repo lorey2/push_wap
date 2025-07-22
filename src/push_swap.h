@@ -6,7 +6,7 @@
 /*   By: lorey <loic.rey.vs@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 19:01:31 by lorey             #+#    #+#             */
-/*   Updated: 2024/12/29 15:28:56 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2025/07/22 16:05:52 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,15 @@ typedef struct s_data
 
 }				t_data;
 
+typedef struct s_move
+{
+	int	cost;
+	int	ra;
+	int	rra;
+	int	rb;
+	int	rrb;
+}	t_move;
+
 size_t		ft_strlen(const char *s);
 int			ft_strcmp(char *s1, char *s2);
 long long	ft_atoi(const char *str);
@@ -52,10 +61,6 @@ void		rra(t_data *data, int silent);
 void		rrb(t_data *data, int silent);
 void		rrr(t_data *data, int silent);
 void		first_algo(t_data *data);
-int			rb_bigger_rrb(t_data *data);
-int			rb_bigger_rrb_2(t_data *data);
-int			min_rb_rrb(t_data *data);
-int			min_rb_rrb_2(t_data *data);
 int			max(t_data *data);
 int			min(t_data *data);
 int			min_a(t_data *data);
@@ -70,5 +75,6 @@ void		execute(t_data *data);
 void		final_test(t_data *data, char *current_move);
 char		*ft_strdup(const char *s1);
 size_t		ft_strlen_skip_zero(const char *s);
+void		first_algo2(t_data *data);
 
 #endif

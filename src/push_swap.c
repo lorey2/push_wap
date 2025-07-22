@@ -6,7 +6,7 @@
 /*   By: lorey <loic.rey.vs@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/28 16:31:38 by lorey             #+#    #+#             */
-/*   Updated: 2024/12/29 16:15:17 by lorey            ###   LAUSANNE.ch       */
+/*   Updated: 2025/07/21 17:01:59 by lorey            ###   LAUSANNE.ch       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,7 +106,7 @@ int	main(int argc, char **argv)
 			return (three_args(&data), finish(&data), 0);
 		if (argc == 5 || argc == 6)
 			return (four_five_args(&data), finish(&data), 0);
-		return (first_algo(&data), finish(&data), 0);
+		return (first_algo2(&data), finish(&data), 0);
 	}
 	return (0);
 }

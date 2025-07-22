@@ -34,7 +34,7 @@ WHITE = \033[0;97m
 
 SRC_FILES        = mini_libft push_swap special_cases \
 				   sa_sb_ss_pa_pb ra_rb_rr rra_rrb_rrr \
-				   turk_algo turk_algo_2 turk_algo_min_max turk_algo_final_rotation \
+				   turk_algo turk_algo_min_max turk_algo_final_rotation \
 				   final_test
 SRC_BONUS_FILES  = mini_libft_bonus checker_bonus execute_bonus \
                    sa_sb_ss_pa_pb_bonus ra_rb_rr_bonus rra_rrb_rrr_bonus \
